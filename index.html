@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="asset/style.css">
+    <script src="https://kit.fontawesome.com/116b0b3d72.js" crossorigin="anonymous"></script>
+    <title>Profile</title>
+</head>
+
+<body>
+    <header>
+
+        <!-- Navigation Bar -->
+        <nav id="navbar" class="navbar">
+            <ul>
+                <li><a href="#Profile">Profile</a></li>
+                <li><a href="#Projects">Projects</a></li>
+                <li><a href="#Footer">Social</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+        <!-- Profile -->
+        <aside id="Profile">
+            <div>
+                <h1>I'm Reggi Fachri</h1>
+                <p>Constantly seeking opportunities to expand my knowledge and skills to develop information systems
+                    that can solve user problems.</p>
+            </div>
+            <img src="asset/img/self-image.jpg" class="profile-image" alt=""
+                style="background-image: cover; border-radius: 50%;">
+        </aside>
+
+        <!-- Article Project -->
+        <article id="Projects">
+            <h1>Projects</h1>
+            <div>
+                <figure>
+                    <img src="asset/img/Dashboard Petugas.jpg" alt="">
+                    <figcaption>Dashboard Petugas</figcaption>
+                </figure>
+                <figure>
+                    <img src="asset/img/Daftar Pengaduan Online.jpg" alt="">
+                    <figcaption>Daftar Pengaduan</figcaption>
+                </figure>
+                <figure>
+                    <img src="asset/img/Form Pengajuan Pengaduan.jpg" alt="">
+                    <figcaption>Form Pengajuan</figcaption>
+                </figure>
+                <figure>
+                    <img src="asset/img/Profil Customer.jpg" alt="">
+                    <figcaption>Profil Customer</figcaption>
+                </figure>
+                <figure>
+                    <img src="asset/img/Registrasi Customer.jpg" alt="">
+                    <figcaption>Registrasi Customer</figcaption>
+                </figure>
+                <figure>
+                    <img src="asset/img/Dashboard Customer.jpg" alt="">
+                    <figcaption>Dashboard Customer</figcaption>
+                </figure>
+            </div>
+        </article>
+    </main>
+
+    <!-- Footer -->
+    <footer id="Footer">
+        <div>
+            <h3>Get in touch</h3>
+            <form class="form">
+                <div>
+                    <span>
+                        <label for="name">Name</label>
+                        <input type="text" id="name" placeholder="Name..." required>
+                    </span>
+                    <span>
+                        <label for="mail">Email</label>
+                        <input type="email" id="mail" placeholder="email..." required>
+                    </span>
+                </div>
+                <label for="message">Message</label>
+                <textarea name="" id="message" rows="10"></textarea>
+                <button onclick="alertFunction()">Submit</button>
+            </form>
+        </div>
+        <div class="social">
+            <h3>Social Media</h3>
+            <div>
+                <a href="#Footer"><i class="fa-brands fa-instagram fa-2xl"></i></a>
+                <a href="#Footer"><i class="fa-brands fa-linkedin fa-2xl"></i></a>
+                <a href="#Footer"><i class="fa-brands fa-behance fa-2xl"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function alertFunction() {
+            alert("Thank you " + document.getElementById("name").value);
+        }
+    </script>
+</body>
+
+</html>
